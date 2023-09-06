@@ -4,7 +4,8 @@
   "description": "jamstack tutorial",
   "main": "vibe.js",
   "scripts": {
-    "build": "eleventy"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "keywords": [],
   "author": "",
