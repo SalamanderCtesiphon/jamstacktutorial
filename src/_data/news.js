@@ -1,10 +1,10 @@
 const axios = require("axios")
 
 
-async function getUser() {
+module.exports = async function() {
   try {
-    const response = await axios.getAdapter("https://newsapi.org/v2/top-headlines/sources?apiKey=a9037fea433b4e8ea292b59c4d2dfbbb ")
-    console.log(response)
+    const response = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=a9037fea433b4e8ea292b59c4d2dfbbb ")
+    return response.data
   } catch (error) {
     console.error(error)
   }
